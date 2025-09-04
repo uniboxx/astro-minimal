@@ -1,12 +1,8 @@
-# Astro Starter Kit: Minimal
+# Astro Starter Kit: Custom Minimal
 
 ```sh
-bun create astro@latest -- --template minimal
+bun create github.com/uniboxx/astro-minimal <directory>
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
@@ -18,8 +14,13 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 ├── src/
+|   └── components/
+|   └── layouts/
+│       └── BaseLayout.astro
 │   └── pages/
 │       └── index.astro
+│   └── styles/
+│       └── global.css
 └── package.json
 ```
 
@@ -33,10 +34,11 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
+| Command               | Action                                           |
+| :-------------------- | :----------------------------------------------- |
+| `bun install`         | Installs dependencies                            |
 | `bun dev`             | Starts local dev server at `localhost:4321`      |
+| `bun check`           | Check types                                      |
 | `bun build`           | Build your production site to `./dist/`          |
 | `bun preview`         | Preview your build locally, before deploying     |
 | `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
