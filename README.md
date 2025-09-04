@@ -1,7 +1,7 @@
 # Astro Starter Kit: Custom Minimal
 
 ```sh
-bun create github.com/uniboxx/astro-minimal <directory>
+bun create uniboxx/astro-minimal <directory>
 ```
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
@@ -29,6 +29,12 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
+
+Added node adapter and SSR as default. To make a page static add to frontmatter:
+
+```
+export const prerender = true;
+```
 
 ## 🧞 Commands
 
