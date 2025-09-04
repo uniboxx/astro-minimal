@@ -1,15 +1,53 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 html {
   font-size: 112.5%;
-  body {
-    background-color: gray;
-  }
   @media screen and (min-width: 80rem) {
     font-size: 125%;
   }
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 20px;
+  &[data-style='none'] {
+    list-style-type: none;
+  }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 66ch;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
