@@ -27,7 +27,6 @@ button {
 ul,
 ol {
   margin: 1rem 0;
-  padding-left: 20px;
   &[data-style='none'] {
     list-style-type: none;
   }
